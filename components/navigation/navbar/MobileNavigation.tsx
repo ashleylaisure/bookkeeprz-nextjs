@@ -12,6 +12,7 @@ import {
 import Image from 'next/image'
 import Link from 'next/link'
 import NavLinks from './NavLinks'
+import { Button } from '@/components/ui/button'
 
 const MobileNavigation = () => {
     return (
@@ -25,7 +26,7 @@ const MobileNavigation = () => {
                     className="invert-colors sm:hidden"
                 />
             </SheetTrigger>
-            <SheetContent side="left" className="background-light900_dark200 border-none p-4">
+            <SheetContent side="left" className="background-light900_dark200 border-none p-6">
                 
                 <SheetTitle className='hidden'>Navigation</SheetTitle>
 
@@ -47,21 +48,21 @@ const MobileNavigation = () => {
                         </section>
                     </SheetClose>
                     <div className='flex flex-col gap-3'>
-                        {/* <SheetClose asChild>
-                            <Link href={ROUTES.SIGN_IN}>
-                                <Button className='small-medium btn-secondary w-full min-h-[41px] rounded-lg px-4 py-3'>
+                        <SheetClose asChild>
+                            <Link href='/'>
+                                <Button className='small-medium btn-secondary w-full min-h-[50px] rounded-lg px-4 py-3'>
                                     <span className='primary-text-gradient'>Log In</span>
                                 </Button>
                             </Link>
                         </SheetClose>
                         <SheetClose asChild>
-                            <Link href={ROUTES.SIGN_UP}>
-                                <Button className='small-medium light-border-2 btn-tertiary text-dark400_light900 min-h-[41px]
+                            <Link href='/'>
+                                <Button className='small-medium light-border-2 btn-tertiary text-dark400_light900 min-h-[50px]
                                 w-full rounded-lg border px-4 py-3 shadow-none'>
                                     <span className='primary-text-gradient'>Sign Up</span>
                                 </Button>
                             </Link>
-                        </SheetClose> */}
+                        </SheetClose>
                     </div>
                 </div>
                 
