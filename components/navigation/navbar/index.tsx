@@ -3,6 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 import Theme from './Theme'
 import MobileNavigation from './MobileNavigation'
+import AuthButton from './AuthButton'
 
 const Navbar = () => {
     return (
@@ -16,7 +17,7 @@ const Navbar = () => {
                     height={23}
                 />
 
-                <p className='h2-bold font-playwrite text-dark-100 dark:text-light900 max-sm:hidden'>
+                <p className='h2-bold font-playwrite text-dark-100 dark:text-light-900 max-sm:hidden'>
                     book<span className='text-primary-500'>keeprz</span>
                 </p>
             </Link>
@@ -27,6 +28,8 @@ const Navbar = () => {
                 <Theme />
 
                 <MobileNavigation />
+
+                <AuthButton />
             </div>
         </nav>
     )

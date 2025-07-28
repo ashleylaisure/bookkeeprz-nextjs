@@ -34,5 +34,5 @@ const TagCard = ({_id, name, numBooks, showCount, compact, icon}: Props) => {
     )
 }
 
-export default TagCard
+export default TagCard;
 

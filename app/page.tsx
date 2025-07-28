@@ -1,0 +1,13 @@
+import AuthButton from "@/components/navigation/navbar/AuthButton";
+import Image from "next/image";
+
+export default function Home() {
+  return (
+    <div className="">
+      <h1 className="text-4xl font-playwrite">bookkeeprz Home</h1>
+      <p className="text-lg font-inter">Your all-in-one reading tracking app.</p>
+
+      <AuthButton />
+    </div>
+  );
+}

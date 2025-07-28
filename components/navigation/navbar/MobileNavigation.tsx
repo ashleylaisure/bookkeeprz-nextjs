@@ -47,7 +47,7 @@ const MobileNavigation = () => {
                             <NavLinks isMobileNav />
                         </section>
                     </SheetClose>
-                    <div className='flex flex-col gap-3'>
+                    {/* <div className='flex flex-col gap-3'>
                         <SheetClose asChild>
                             <Link href='/'>
                                 <Button className='small-medium btn-secondary w-full min-h-[50px] rounded-lg px-4 py-3'>
@@ -63,7 +63,7 @@ const MobileNavigation = () => {
                                 </Button>
                             </Link>
                         </SheetClose>
-                    </div>
+                    </div> */}
                 </div>
                 
             </SheetContent>
