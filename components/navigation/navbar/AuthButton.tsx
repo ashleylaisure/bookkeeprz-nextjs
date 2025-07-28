@@ -8,6 +8,9 @@ import {
     SignedOut,
     UserButton,
 } from '@clerk/nextjs'
+import Image from 'next/image'
+import Link from 'next/link'
+import ROUTES from '@/constants/routes'
 
 const AuthButton = () => {
     return (
@@ -20,7 +23,17 @@ const AuthButton = () => {
                         </button>
                     </SignUpButton>
                 </SignedOut>
+
                 <SignedIn>
+                    <Link href={ROUTES.DASHBOARD}>
+                    <Image
+                        src="/icons/user.svg"
+                        alt="User"
+                        width={24}
+                        height={24}
+                        className='invert-colors'
+                    />
+                    </Link>
                     <UserButton />
                 </SignedIn>
             </div>

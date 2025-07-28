@@ -7,6 +7,7 @@ const ROUTES = {
     PRICING: '/pricing',
     ABOUT: '/about',
 
+    DASHBOARD: '/dashboard',
     BOOK: (bookId: string) => `/books/${bookId}`,
     TAGS: (tagId: string) => `/tags/${tagId}`,
 }

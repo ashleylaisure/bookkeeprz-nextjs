@@ -1,8 +1,8 @@
 export const sidebarLinks = [
         {
-        label: 'Home',
-        route: '/',
-        imgURL: '/icons/home.svg',
+        label: 'Dashboard',
+        route: '/dashboard',
+        imgURL: '/icons/users.svg',
     }, {
         label: 'My Books',
         route: '/my-books',
