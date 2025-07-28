@@ -24,19 +24,21 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
 
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} ${playwrite.variable} antialiased`}>
-        <ClerkProvider>
-          <ThemeProvider 
-            attribute="class" 
-            defaultTheme="system" 
-            enableSystem
-            disableTransitionOnChange
-          >
-            {children}
-          </ThemeProvider>
-        </ClerkProvider>
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en" suppressHydrationWarning>
+        <body className={`${inter.className} ${playwrite.variable} antialiased`}>
+          
+            <ThemeProvider 
+              attribute="class" 
+              defaultTheme="system" 
+              enableSystem
+              disableTransitionOnChange
+            >
+              {children}
+            </ThemeProvider>
+          
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

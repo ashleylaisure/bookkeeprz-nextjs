@@ -4,23 +4,13 @@ import React from 'react'
 import Theme from './Theme'
 import MobileNavigation from './MobileNavigation'
 import AuthButton from './AuthButton'
+import BrandLogo from '@/components/BrandLogo'
 
 const Navbar = () => {
     return (
         <nav className="flex-between background-light900_dark200 
-        fixed z-50 w-full gap-5 p-6 shadow-light-300 dark:shadow-none sm:px-12">
-            <Link href="/" className='flex items-center gap-1'>
-                <Image
-                    src="/book-icons/book-simple.png"
-                    alt="Bookkeeprz Logo"
-                    width={23}
-                    height={23}
-                />
-
-                <p className='h2-bold font-playwrite text-dark-100 dark:text-light-900 max-sm:hidden'>
-                    book<span className='text-primary-500'>keeprz</span>
-                </p>
-            </Link>
+        fixed z-50 w-full gap-5 p-3 shadow-light-300 dark:shadow-none sm:px-12">
+            <BrandLogo />
 
             <p>Global Search</p>
 
